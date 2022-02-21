@@ -20,6 +20,7 @@ app.use('/services', require('./services/service.controller'));
 app.use('/tutors', require('./tutors/tutor.controller'));
 app.use('/products', require('./products/product.controller'));
 app.use('/students', require('./students/student.controller')); 
+app.use('/squads', require('./squads/squad.controller')); 
 app.use('/files', require('./files/file.controller'));
 app.use('/requests', require('./requests/requests.controller'));
 app.use('/utensils', require('./utensils/utensil.controller'));

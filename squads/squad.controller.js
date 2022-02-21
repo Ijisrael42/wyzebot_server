@@ -4,7 +4,7 @@ const Joi = require('joi');
 const validateRequest = require('_middleware/validate-request');
 const authorize = require('_middleware/authorize')
 const Role = require('_helpers/role');
-const wyzebotsService = require('./wyzebot.service');
+const squadsService = require('./squad.service');
 
 // routes
 
@@ -19,22 +19,22 @@ router.post('/deletemany', deletemany);
 module.exports = router;
 
 function getAll(req, res, next) {
-    wyzebotsService.getAll()
-        .then(wyzebots => res.json(wyzebots))
+    squadsService.getAll()
+        .then(squads => res.json(squads))
         .catch(next);
 }
 
 function getAllActive(req, res, next) {
-    wyzebotsService.getAllActive()
-        .then(wyzebots => res.json(wyzebots))
+    squadsService.getAllActive()
+        .then(squads => res.json(squads))
         .catch(next);
 }
 
 function getById(req, res, next) {
-    // users can get their own wyzebot and admins can get any wyzebot
+    // users can get their own squad and admins can get any squad
 
-    wyzebotsService.getById(req.params.id)
-        .then(wyzebot => wyzebot ? res.json(wyzebot) : res.sendStatus(404))
+    squadsService.getById(req.params.id)
+        .then(squad => squad ? res.json(squad) : res.sendStatus(404))
         .catch(next);
 }
 
@@ -54,8 +54,8 @@ function createSchema(req, res, next) {
 }
 
 function create(req, res, next) {
-    wyzebotsService.create(req.body)
-        .then(wyzebot => res.json(wyzebot))
+    squadsService.create(req.body)
+        .then(squad => res.json(squad))
         .catch(next);
 }
 
@@ -80,26 +80,26 @@ function updateSchema(req, res, next) {
 }
 
 function update(req, res, next) {
-    // users can update their own wyzebot and admins can update any wyzebot
+    // users can update their own squad and admins can update any squad
 
-    wyzebotsService.update(req.params.id, req.body)
-        .then(wyzebot => res.json(wyzebot))
+    squadsService.update(req.params.id, req.body)
+        .then(squad => res.json(squad))
         .catch(next);
 }
 
 function _delete(req, res, next) {
-    // users can delete their own wyzebot and admins can delete any wyzebot
+    // users can delete their own squad and admins can delete any squad
 /*     if (req.params.id !== req.user.id && req.user.role !== Role.Admin) {
         return res.status(401).json({ message: 'Unauthorized' });
     }
  */
-    wyzebotsService.delete(req.params.id)
+    squadsService.delete(req.params.id)
         .then(() => res.json({ message: 'Account deleted successfully' }))
         .catch(next);
 }
 
 function deletemany(req, res, next) {
-    wyzebotsService.deletemany(req, res)
+    squadsService.deletemany(req, res)
         .then(() => res.json({ message: 'Accounts deleted successfully' }))
         .catch(next);
 }
