@@ -77,7 +77,7 @@ router.get("/files", files);
 router.get("/files/:filename", fileByName);
 router.get("/image/:filename", download);
 router.get("/image/:filename/:width/:height", resizingImages);
-router.post("/files/del/:id", deleteFile);
+router.get("/delete/:id", deleteFile);
 
 module.exports = router;
 
@@ -221,9 +221,9 @@ function resizingImages (req, res, next) {
 // files/del/:id
 // Delete chunks from the db
 function deleteFile (req, res) {
-  gfs.delete(new mongoose.Types.ObjectId(req.params.id), (err, data) => {
+  gfs.delete(new mongoose.Types.ObjectId(req.params.id), (err, data) => { 
     if (err) return res.status(404).json({ err: err.message });
-    res.redirect("/");
+    return res.json({message : "success"});
   });
 }
 
