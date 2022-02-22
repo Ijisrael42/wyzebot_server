@@ -7,6 +7,7 @@ const schema = new Schema({
     file_id: { type: String, required: true },
     power: { type: Array, required: true  },
     squad: { type: String },
+    squad_name: { type: String },
     created: { type: Date, default: Date.now },
     updated: Date
 });

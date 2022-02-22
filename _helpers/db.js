@@ -18,6 +18,7 @@ module.exports = {
     RequestItem: require('requests/request_item.model'),
     Service: require('services/service.model'),
     Squad: require('squads/squad.model'),
+    Tribe: require('tribes/tribe.model'),
     Tutor: require('tutors/tutor.model'),
     Student: require('students/student.model'),
     Utensil: require('utensils/utensil.model'),

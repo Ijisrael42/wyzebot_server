@@ -3,9 +3,7 @@ const Schema = mongoose.Schema;
 
 const schema = new Schema({
     name: { type: String, required: true },
-    wyzebots: { type: Array, required: true  },
-    tribe: { type: String },
-    tribe_name: { type: String },
+    squads: { type: Array, required: true  },
     created: { type: Date, default: Date.now },
     updated: Date
 });
@@ -24,4 +22,4 @@ schema.set('toJSON', {
     }
 });
 
-module.exports = mongoose.model('Squad', schema);
+module.exports = mongoose.model('Tribe', schema);

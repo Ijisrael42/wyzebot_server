@@ -33,16 +33,24 @@ async function create(params) {
 
     await squad.save();
 
+    // Add Squad to linked Wyzebots
+    addWyzebots(squad);
     return basicDetails(squad);
 }
 
 async function update(id, params) {
     const squad = await getSquad(id);
 
+    // Delete Squad from linked Wyzebots
+    deleteWyzebots(squad.wyzebots);
+
     // copy params to squad and save
     Object.assign(squad, params);
     squad.updated = Date.now();
     await squad.save();
+
+    // Add Squad to linked Wyzebots
+    addWyzebots(squad);
 
     return basicDetails(squad);
 }
@@ -57,9 +65,52 @@ async function deletemany(req, res) {
 
     for ( var i = 0; i < params.length; i++){
         const squad = await getSquad(params[i]);
-        fileService.deleteFile(squad.file_id);
+
+        // Delete Squad from linked Wyzebots
+        deleteWyzebots(squad.wyzebots);
+
+        // delete Squad from Tribe
+        if(squad.tribe){
+            /* tribe = await db.Tribe.findById(squad.tribe);
+            if(tribe) {
+                tribe.squads = tribe.squads.filter((el) => squad.id !== el));
+                await tribe.save();
+            } */
+        }
     }
+
     await db.Squad.deleteMany({ _id: { $in: params } });
+}
+
+// Add Squad to linked Wyzebots
+async function addWyzebots(squad) {
+    let wyzebot = null;
+
+    for( var i = 0; i < squad.wyzebots.length; i++ ) {
+        wyzebot = await db.Wyzebot.findById(squad.wyzebots[i]);
+        if(wyzebot) {
+            wyzebot.squad = squad.id;
+            wyzebot.squad_name = squad.name;
+            await wyzebot.save();
+        }
+    }
+
+}
+
+// Delete Squad from linked Wyzebots
+async function deleteWyzebots(wyzebots) {
+
+    let wyzebot = null;
+
+    // Delete Squad from linked Wyzebots
+    for ( var i = 0; i < wyzebots.length; i++){
+        wyzebot = await db.Wyzebot.findById(wyzebots[i]);
+        if(wyzebot) {
+            wyzebot.squad = "";
+            wyzebot.squad_name = "";
+            await wyzebot.save();
+        }
+    }
 }
 
 // helper functions
@@ -72,6 +123,6 @@ async function getSquad(id) {
 }
 
 function basicDetails(squad) {
-    const { id, name, wyzebot, tribe, created } = squad;
-    return { id, name, wyzebot, tribe, created };
+    const { id, name, wyzebots, tribe, tribe_name, created } = squad;
+    return { id, name, wyzebots, tribe, tribe_name, created };
 }

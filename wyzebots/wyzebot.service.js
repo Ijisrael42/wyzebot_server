@@ -58,6 +58,13 @@ async function deletemany(req, res) {
     for ( var i = 0; i < params.length; i++){
         const wyzebot = await getWyzebot(params[i]);
         fileService.deleteFile(wyzebot.file_id);
+
+        // Deleting Wyzebot from linked Squad
+        const squad = await db.Squad.findById(wyzebot.squad);
+        if(squad){
+            squad.wyzebots = squad.wyzebots.filter((el) => wyzebot.id !== el);
+            await squad.save();
+        }
     }
     await db.Wyzebot.deleteMany({ _id: { $in: params } });
 }
@@ -72,6 +79,6 @@ async function getWyzebot(id) {
 }
 
 function basicDetails(wyzebot) {
-    const { id, name, image, power, squad, file_id, created } = wyzebot;
-    return { id, name, image, power, squad, file_id, created };
+    const { id, name, image, power, squad, squad_name, file_id, created } = wyzebot;
+    return { id, name, image, power, squad, squad_name, file_id, created };
 }
