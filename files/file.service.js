@@ -5,10 +5,10 @@ const crypto = require("crypto");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const GridFsStorage = require("multer-gridfs-storage");
-const config = require('config.json');
+const {connectionString} = require('config');
 
 // connection
-const conn = mongoose.createConnection(config.connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
+const conn = mongoose.createConnection(connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // init gfs
 let gfs;
@@ -23,7 +23,7 @@ conn.once("open", () => {
 
 // Storage
 const storage = new GridFsStorage({
-  url: config.connectionString,
+  url: connectionString,
   file: (req, file) => {
     return new Promise((resolve, reject) => {
       crypto.randomBytes(16, (err, buf) => {

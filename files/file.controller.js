@@ -7,11 +7,11 @@ const path = require("path");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const GridFsStorage = require("multer-gridfs-storage");
-const config = require('config.json');
+const {connectionString} = require('config');
 const sharp = require('sharp');
 
 // connection
-const conn = mongoose.createConnection(config.connectionString, {
+const conn = mongoose.createConnection(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -27,26 +27,9 @@ conn.once("open", () => {
   console.log("Mongodb database connection established successfully in gridfs !!");
 });
 
-/* 
-const connectionOptions = { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false };
-mongoose.connect( config.connectionString, connectionOptions);
-mongoose.Promise = global.Promise;
-const connection= mongoose.connection;
-let gfs;
-
-connection.once('open', () => {
-  // init stream
-  gfs = new mongoose.mongo.GridFSBucket(connection.db, {
-    bucketName: "uploads"
-  });
-
-  console.log("Mongodb database connection established successfully in gridfs !!");
-})
- */
-
 // Storage
 const storage = new GridFsStorage({
-  url: config.connectionString,
+  url: connectionString,
   file: (req, file) => {
     return new Promise((resolve, reject) => {
       crypto.randomBytes(16, (err, buf) => {

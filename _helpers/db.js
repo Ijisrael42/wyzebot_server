@@ -1,9 +1,10 @@
-const config = require('config.json');
+const config = require('config');
 const mongoose = require('mongoose');
+
 const connectionOptions = { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false };
 mongoose.connect( config.connectionString, connectionOptions);
 mongoose.Promise = global.Promise;
-const connection= mongoose.connection;
+const connection= mongoose.connection; 
 
 connection.once('open', () => {
     console.log("Mongodb database connection established successfully !!");
