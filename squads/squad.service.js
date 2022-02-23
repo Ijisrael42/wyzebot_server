@@ -70,13 +70,11 @@ async function deletemany(req, res) {
         deleteWyzebots(squad.wyzebots);
 
         // delete Squad from Tribe
-        if(squad.tribe){
-            /* tribe = await db.Tribe.findById(squad.tribe);
-            if(tribe) {
-                tribe.squads = tribe.squads.filter((el) => squad.id !== el));
-                await tribe.save();
-            } */
-        }
+        const tribe = await db.Tribe.findById(squad.tribe);
+        if(tribe) {
+            tribe.squads = tribe.squads.filter((el) => squad.id !== el);
+            await tribe.save();
+        }        
     }
 
     await db.Squad.deleteMany({ _id: { $in: params } });

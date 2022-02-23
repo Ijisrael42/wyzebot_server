@@ -10,20 +10,8 @@ connection.once('open', () => {
 })
 
 module.exports = {
-    Account: require('accounts/account.model'),
-    Customer: require('customers/customer.model'),
-    Product: require('products/product.model'),
-    RefreshToken: require('accounts/refresh-token.model'),
-    Request: require('requests/request.model'),
-    RequestItem: require('requests/request_item.model'),
-    Service: require('services/service.model'),
     Squad: require('squads/squad.model'),
     Tribe: require('tribes/tribe.model'),
-    Tutor: require('tutors/tutor.model'),
-    Student: require('students/student.model'),
-    Utensil: require('utensils/utensil.model'),
-    Washing: require('washings/washing.model'),
-    WashingItem: require('washings/washing_item.model'),
     Wyzebot: require('wyzebots/wyzebot.model'),
     isValidId
 };

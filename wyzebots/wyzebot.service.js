@@ -61,7 +61,7 @@ async function deletemany(req, res) {
 
         // Deleting Wyzebot from linked Squad
         const squad = await db.Squad.findById(wyzebot.squad);
-        if(squad){
+        if(squad){ 
             squad.wyzebots = squad.wyzebots.filter((el) => wyzebot.id !== el);
             await squad.save();
         }

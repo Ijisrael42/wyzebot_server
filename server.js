@@ -14,18 +14,9 @@ app.use(cookieParser());
 app.use(cors({ origin: (origin, callback) => callback(null, true), credentials: true }));
 
 // api routes
-app.use('/accounts', require('./accounts/accounts.controller'));
-app.use('/customers', require('./customers/customer.controller'));
 app.use('/files', require('./files/file.controller'));
-app.use('/products', require('./products/product.controller'));
-app.use('/requests', require('./requests/requests.controller'));
-app.use('/students', require('./students/student.controller')); 
 app.use('/squads', require('./squads/squad.controller')); 
-app.use('/services', require('./services/service.controller'));
 app.use('/tribes', require('./tribes/tribe.controller'));
-app.use('/tutors', require('./tutors/tutor.controller'));
-app.use('/utensils', require('./utensils/utensil.controller'));
-app.use('/washings', require('./washings/washing.controller'));
 app.use('/wyzebots', require('./wyzebots/wyzebot.controller'));
 // swagger docs route
 app.use('/api-docs', require('_helpers/swagger'));
