@@ -1,5 +1,29 @@
-# node-mongo-signup-verification-api
+# WyzeBots
 
-NodeJS + MongoDB - API with Email Sign Up, Verification, Authentication & Forgot Password
+Models
+- WyzeBots
+- Squads
+- Tribes
 
-For documentation and instructions see https://jasonwatmore.com/post/2020/05/13/node-mongo-api-with-email-sign-up-verification-authentication-forgot-password
+## Quick Start
+
+1. Get the latest version
+
+```shell
+git clone https://github.com/Ijisrael42/wyzebot_server.git WyzeBots
+cd WyzeBots
+```
+
+2. Run
+
+```shell
+npm install
+```
+
+3. Run
+
+```shell
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
