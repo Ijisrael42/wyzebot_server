@@ -1,11 +1,10 @@
 {
-    "name": "node-mongo-signup-verification-api",
+    "name": "node-mongo-api",
     "version": "1.0.0",
-    "description": "NodeJS + MongoDB API for Email Sign Up with Verification, Authentication & Forgot Password",
-    "license": "MIT",
+    "description": "NodeJS + MongoDB API",
     "repository": {
         "type": "git",
-        "url": "https://github.com/cornflourblue/node-mongo-signup-verification-api.git"
+        "url": "https://github.com/Ijisrael42/wyzebot_server.git"
     },
     "scripts": {
         "start": "node ./server.js",
