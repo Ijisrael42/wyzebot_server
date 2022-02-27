@@ -3,8 +3,7 @@ const Schema = mongoose.Schema;
 
 const schema = new Schema({
     name: { type: String, required: true },
-    image: { type: String, required: true },
-    file_id: { type: String, required: true },
+    image_url: { type: String, required: true },
     power: { type: Array, required: true  },
     squad: { type: String },
     squad_name: { type: String },

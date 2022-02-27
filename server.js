@@ -14,12 +14,9 @@ app.use(cookieParser());
 app.use(cors({ origin: (origin, callback) => callback(null, true), credentials: true }));
 
 // api routes
-app.use('/files', require('./files/file.controller'));
 app.use('/squads', require('./squads/squad.controller')); 
 app.use('/tribes', require('./tribes/tribe.controller'));
 app.use('/wyzebots', require('./wyzebots/wyzebot.controller'));
-// swagger docs route
-app.use('/api-docs', require('_helpers/swagger'));
 
 // global error handler
 app.use(errorHandler);

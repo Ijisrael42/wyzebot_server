@@ -1,5 +1,4 @@
 ﻿const db = require('_helpers/db');
-const fileService = require('../files/file.service');
 
 module.exports = {
     getAll,
