@@ -1,5 +1,4 @@
 const fs = require("fs");
-chalk = require('chalk');
 
 const loggerHandler = (req, res, next) => { //middleware function
     let dateTime = new Date();
@@ -9,8 +8,7 @@ const loggerHandler = (req, res, next) => { //middleware function
     let method = req.method, url = req.url, status = res.statusCode;
     const start = process.hrtime();
     const durationInMilliseconds = getActualRequestDurationInMilliseconds(start);
-    let log = `[${chalk.blue(formatted_date)}] ${method}:${url} ${status} 
-    ${chalk.red(durationInMilliseconds.toLocaleString() + "ms")}`;    
+    let log = `[${formatted_date}] ${method}:${url} ${status} ${durationInMilliseconds.toLocaleString()} ms`;
     console.log(log);
 
     fs.appendFile("request_logs.txt", log + "\n", err => { if (err) { console.log(err); } });
