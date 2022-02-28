@@ -27,6 +27,9 @@ async function getById(id) {
 
 async function create(params) {
 
+    if( await db.Wyzebot.findOne({ name: params.name }) )
+        throw "Name is already taken";
+
     const wyzebot = new db.Wyzebot(params);
     wyzebot.verified = Date.now();
 
@@ -37,6 +40,9 @@ async function create(params) {
 
 async function update(id, params) {
     const wyzebot = await getWyzebot(id);
+
+    if( wyzebot.name !== params.name && await db.Wyzebot.findOne({ name: params.name }) )
+        throw "Name is already taken";
 
     // copy params to wyzebot and save
     Object.assign(wyzebot, params);
