@@ -1,22 +1,8 @@
-﻿const db = require('_helpers/db');
-
-module.exports = {
-    getAll,
-    getAllActive,
-    getById,
-    create,
-    update,
-    delete: _delete,
-    deletemany,
-};
+﻿const db = require('../_helpers/db');
+module.exports = { getAll, getById, create, update, delete: _delete, deletemany, };
 
 async function getAll() {
     const wyzebots = await db.Wyzebot.find();
-    return wyzebots.map(x => basicDetails(x));
-}
-
-async function getAllActive() {
-    const wyzebots = await db.Wyzebot.find({ status: "Enabled"});
     return wyzebots.map(x => basicDetails(x));
 }
 
@@ -30,10 +16,8 @@ async function create(params) {
     if( await db.Wyzebot.findOne({ name: params.name }) )
         throw "Name is already taken";
 
-    const wyzebot = new db.Wyzebot(params);
-    wyzebot.verified = Date.now();
-
-    await wyzebot.save();
+    params.verified = Date.now();
+    const wyzebot = await new db.Wyzebot(params).save(); 
 
     return basicDetails(wyzebot);
 }

@@ -1,4 +1,4 @@
-const config = require('config');
+const config = require('../config');
 const mongoose = require('mongoose');
 
 const connectionOptions = { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false };
@@ -11,9 +11,9 @@ connection.once('open', () => {
 })
 
 module.exports = {
-    Squad: require('squads/squad.model'),
-    Tribe: require('tribes/tribe.model'),
-    Wyzebot: require('wyzebots/wyzebot.model'),
+    Squad: require('../squads/squad.model'),
+    Tribe: require('../tribes/tribe.model'),
+    Wyzebot: require('../wyzebots/wyzebot.model'),
     isValidId
 };
 

@@ -1,22 +1,9 @@
-﻿const db = require('_helpers/db');
+﻿const db = require('../_helpers/db');
 
-module.exports = {
-    getAll,
-    getAllActive,
-    getById,
-    create,
-    update,
-    delete: _delete,
-    deletemany,
-};
+module.exports = { getAll, getById, create, update, delete: _delete, deletemany };
 
 async function getAll() {
     const tribes = await db.Tribe.find();
-    return tribes.map(x => basicDetails(x));
-}
-
-async function getAllActive() {
-    const tribes = await db.Tribe.find({ status: "Enabled"});
     return tribes.map(x => basicDetails(x));
 }
 

@@ -1,21 +1,196 @@
-[2022-2-28 13:11:9] GET:/wyzebots 200 0,13 ms
-[[34m2022-2-28 13:16:51[39m] GET:/squads 200 
-    [31m0,056ms[39m
-[[34m2022-2-28 13:16:51[39m] GET:/wyzebots 200 
-    [31m0,004ms[39m
-[[34m2022-2-28 13:16:53[39m] GET:/tribes 200 
-    [31m0,005ms[39m
-[[34m2022-2-28 13:16:53[39m] GET:/squads 200 
-    [31m0,006ms[39m
-[[34m2022-2-28 13:16:55[39m] GET:/squads 200 
-    [31m0,01ms[39m
-[[34m2022-2-28 13:16:55[39m] GET:/tribes/62162d9eebc7ef3810e40edc 200 
-    [31m0,01ms[39m
-[[34m2022-2-28 13:16:55[39m] GET:/wyzebots 200 
-    [31m0,005ms[39m
-[[34m2022-2-28 13:17:0[39m] PUT:/tribes/62162d9eebc7ef3810e40edc 200 
-    [31m0,006ms[39m
-[[34m2022-2-28 13:17:5[39m] GET:/tribes 200 
-    [31m0,006ms[39m
-[[34m2022-2-28 13:17:6[39m] GET:/squads 200 
-    [31m0,005ms[39m
+[2022-3-1 0:21:25] GET:/wyzebots 200 0,531 ms
+[2022-3-1 0:21:34] GET:/squads 200 0,032 ms
+[2022-3-1 0:21:35] GET:/wyzebots 200 0,023 ms
+[2022-3-1 0:22:1] GET:/squads/621629c9ebc7ef3810e40ecb 200 0,02 ms
+[2022-3-1 0:22:1] GET:/wyzebots 200 0,017 ms
+[2022-3-1 0:22:13] GET:/squads 200 0,027 ms
+[2022-3-1 0:22:13] GET:/wyzebots 200 0,023 ms
+[2022-3-1 23:54:36] GET:/wyzebots 200 0,077 ms
+[2022-3-1 23:55:28] GET:/wyzebots 200 0,004 ms
+[2022-3-1 23:57:39] GET:/wyzebots 200 0,004 ms
+[2022-3-1 23:57:41] GET:/wyzebots 200 0,005 ms
+[2022-3-1 23:59:50] GET:/wyzebots 200 0,006 ms
+[2022-3-1 23:59:52] GET:/wyzebots 200 0,006 ms
+[2022-3-2 0:0:44] GET:/wyzebots 200 0,006 ms
+[2022-3-2 0:0:44] GET:/wyzebots 200 0,006 ms
+[2022-3-2 0:1:38] GET:/wyzebots 200 0,006 ms
+[2022-3-2 0:3:48] GET:/squads 200 0,007 ms
+[2022-3-2 0:3:49] GET:/wyzebots 200 0,006 ms
+[2022-3-2 0:5:1] GET:/squads 200 0,008 ms
+[2022-3-2 0:5:1] GET:/wyzebots 200 0,008 ms
+[2022-3-2 0:10:51] GET:/squads 200 0,007 ms
+[2022-3-2 0:10:51] GET:/wyzebots 200 0,005 ms
+[2022-3-2 0:12:16] GET:/squads 200 0,008 ms
+[2022-3-2 0:12:16] GET:/wyzebots 200 0,006 ms
+[2022-3-2 12:47:9] GET:/wyzebots 200 0,012 ms
+[2022-3-2 12:47:35] GET:/wyzebots 200 0,003 ms
+[2022-3-2 22:45:3] GET:/wyzebots 200 0,005 ms
+[2022-3-2 22:53:4] GET:/wyzebots 200 0,007 ms
+[2022-3-2 22:53:29] GET:/wyzebots 200 0,004 ms
+[2022-3-2 22:55:12] GET:/wyzebots 200 0,004 ms
+[2022-3-2 23:1:51] GET:/squads 200 0,005 ms
+[2022-3-2 23:1:52] GET:/wyzebots 200 0,004 ms
+[2022-3-2 23:55:54] GET:/wyzebots 200 0,051 ms
+[2022-3-3 0:0:36] GET:/wyzebots 200 0,006 ms
+[2022-3-3 0:3:26] GET:/wyzebots 200 0,006 ms
+[2022-3-3 0:6:51] GET:/squads 200 0,005 ms
+[2022-3-3 0:6:52] GET:/wyzebots 200 0,008 ms
+[2022-3-3 0:21:56] GET:/squads 200 0,004 ms
+[2022-3-3 0:21:57] GET:/wyzebots 200 0,006 ms
+[2022-3-3 0:28:24] GET:/wyzebots 200 0,007 ms
+[2022-3-3 0:29:54] GET:/wyzebots 200 0,006 ms
+[2022-3-3 0:29:56] GET:/squads 200 0,005 ms
+[2022-3-3 0:29:56] GET:/wyzebots 200 0,007 ms
+[2022-3-3 0:29:58] GET:/tribes 200 0,005 ms
+[2022-3-3 0:29:58] GET:/squads 200 0,004 ms
+[2022-3-3 0:30:0] GET:/wyzebots 200 0,005 ms
+[2022-3-3 0:30:4] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,005 ms
+[2022-3-3 0:30:14] GET:/wyzebots 200 0,005 ms
+[2022-3-3 11:29:48] GET:/wyzebots 200 0,056 ms
+[2022-3-3 11:30:22] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,004 ms
+[2022-3-3 11:30:33] GET:/wyzebots 200 0,005 ms
+[2022-3-3 11:30:36] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,007 ms
+[2022-3-3 11:30:49] GET:/wyzebots 200 0,004 ms
+[2022-3-3 11:32:12] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,007 ms
+[2022-3-3 11:38:25] GET:/wyzebots 200 0,005 ms
+[2022-3-3 11:43:55] GET:/wyzebots 200 0,006 ms
+[2022-3-3 11:44:1] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,004 ms
+[2022-3-3 16:10:14] GET:/wyzebots 200 0,045 ms
+[2022-3-3 16:10:24] GET:/squads 200 0,003 ms
+[2022-3-3 16:10:25] GET:/wyzebots 200 0,003 ms
+[2022-3-4 9:13:4] GET:/wyzebots 200 0,344 ms
+[2022-3-4 9:16:13] GET:/wyzebots 200 0,007 ms
+[2022-3-4 9:18:32] GET:/wyzebots 200 0,009 ms
+[2022-3-4 9:21:26] GET:/wyzebots 200 0,006 ms
+[2022-3-4 9:21:42] GET:/wyzebots 200 0,009 ms
+[2022-3-4 9:27:17] GET:/wyzebots 200 0,011 ms
+[2022-3-4 9:27:25] GET:/wyzebots 200 0,012 ms
+[2022-3-4 9:27:31] GET:/wyzebots 200 0,008 ms
+[2022-3-4 9:27:35] GET:/wyzebots 200 0,013 ms
+[2022-3-4 9:27:40] GET:/wyzebots 200 0,02 ms
+[2022-3-4 9:28:30] GET:/wyzebots 200 0,01 ms
+[2022-3-4 9:28:32] GET:/squads 200 0,011 ms
+[2022-3-4 9:28:32] GET:/wyzebots 200 0,009 ms
+[2022-3-4 9:28:33] GET:/tribes 200 0,013 ms
+[2022-3-4 9:28:34] GET:/squads 200 0,007 ms
+[2022-3-4 9:30:32] GET:/wyzebots 200 0,011 ms
+[2022-3-4 9:31:0] GET:/wyzebots 200 0,011 ms
+[2022-3-4 9:31:2] GET:/squads 200 0,016 ms
+[2022-3-4 9:31:2] GET:/wyzebots 200 0,005 ms
+[2022-3-4 9:31:3] GET:/tribes 200 0,004 ms
+[2022-3-4 9:31:3] GET:/squads 200 0,005 ms
+[2022-3-4 9:31:5] GET:/squads 200 0,005 ms
+[2022-3-4 9:31:5] GET:/wyzebots 200 0,003 ms
+[2022-3-4 9:31:6] GET:/wyzebots 200 0,004 ms
+[2022-3-4 9:31:42] GET:/wyzebots 200 0,005 ms
+[2022-3-4 9:40:55] GET:/wyzebots 200 0,006 ms
+[2022-3-4 9:41:21] GET:/wyzebots/62162cdfebc7ef3810e40ed7 200 0,005 ms
+[2022-3-4 9:42:22] GET:/wyzebots 200 0,006 ms
+[2022-3-4 9:42:30] GET:/wyzebots 200 0,005 ms
+[2022-3-4 9:46:47] GET:/wyzebots 200 0,006 ms
+[2022-3-4 9:46:49] GET:/squads 200 0,005 ms
+[2022-3-4 9:46:49] GET:/wyzebots 200 0,005 ms
+[2022-3-4 9:46:51] GET:/wyzebots 200 0,008 ms
+[2022-3-4 9:46:53] GET:/squads 200 0,005 ms
+[2022-3-4 9:46:53] GET:/wyzebots 200 0,004 ms
+[2022-3-4 9:46:55] GET:/wyzebots 200 0,006 ms
+[2022-3-4 9:47:31] GET:/wyzebots/wyzebot 200 0,004 ms
+[2022-3-4 9:47:45] GET:/wyzebots/wyzebot 200 0,008 ms
+[2022-3-4 9:47:58] GET:/wyzebots 200 0,005 ms
+[2022-3-4 9:48:8] GET:/wyzebots/wyzebot 200 0,006 ms
+[2022-3-4 10:7:26] GET:/wyzebots 200 0,008 ms
+[2022-3-4 10:7:37] GET:/wyzebots 200 0,006 ms
+[2022-3-4 10:8:23] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:8:25] GET:/squads 200 0,005 ms
+[2022-3-4 10:8:25] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:8:29] GET:/squads 200 0,006 ms
+[2022-3-4 10:8:29] GET:/wyzebots 200 0,006 ms
+[2022-3-4 10:8:30] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:8:31] GET:/squads 200 0,007 ms
+[2022-3-4 10:8:31] GET:/wyzebots 200 0,007 ms
+[2022-3-4 10:9:17] GET:/squads 200 0,005 ms
+[2022-3-4 10:9:17] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:9:21] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:10:4] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,005 ms
+[2022-3-4 10:10:10] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:10:17] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:10:19] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,008 ms
+[2022-3-4 10:13:47] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:14:8] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:14:20] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:14:50] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:14:58] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:15:3] GET:/wyzebots 200 0,008 ms
+[2022-3-4 10:15:8] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:15:50] GET:/wyzebots 200 0,006 ms
+[2022-3-4 10:16:34] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:16:48] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:28:17] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:28:24] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:28:48] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:29:1] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:29:4] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,004 ms
+[2022-3-4 10:30:33] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,005 ms
+[2022-3-4 10:30:43] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,004 ms
+[2022-3-4 10:32:0] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,005 ms
+[2022-3-4 10:32:6] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:32:12] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,005 ms
+[2022-3-4 10:32:14] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:32:16] GET:/wyzebots/62162cb5ebc7ef3810e40ed4 200 0,005 ms
+[2022-3-4 10:32:18] GET:/wyzebots 200 0,007 ms
+[2022-3-4 10:32:19] GET:/wyzebots/62162cdfebc7ef3810e40ed7 200 0,008 ms
+[2022-3-4 10:32:21] GET:/wyzebots 200 0,007 ms
+[2022-3-4 10:32:22] GET:/squads 200 0,005 ms
+[2022-3-4 10:32:22] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:32:23] GET:/squads/62162d39ebc7ef3810e40edb 200 0,004 ms
+[2022-3-4 10:32:23] GET:/wyzebots 200 0,004 ms
+[2022-3-4 10:32:26] GET:/squads 200 0,008 ms
+[2022-3-4 10:32:26] GET:/wyzebots 200 0,006 ms
+[2022-3-4 10:32:28] GET:/tribes 200 0,005 ms
+[2022-3-4 10:32:28] GET:/squads 200 0,004 ms
+[2022-3-4 10:32:29] GET:/squads 200 0,005 ms
+[2022-3-4 10:32:29] GET:/tribes/62162db6ebc7ef3810e40edd 200 0,005 ms
+[2022-3-4 10:32:29] GET:/wyzebots 200 0,005 ms
+[2022-3-4 10:32:30] GET:/tribes 200 0,005 ms
+[2022-3-4 10:32:30] GET:/squads 200 0,006 ms
+[2022-3-4 12:26:37] GET:/wyzebots 200 0,006 ms
+[2022-3-4 12:26:41] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,006 ms
+[2022-3-4 12:26:43] GET:/wyzebots 200 0,009 ms
+[2022-3-4 12:27:8] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,005 ms
+[2022-3-4 12:27:36] GET:/wyzebots 200 0,005 ms
+[2022-3-4 12:27:39] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,006 ms
+[2022-3-4 12:27:42] GET:/wyzebots 200 0,007 ms
+[2022-3-4 12:30:28] GET:/wyzebots 200 0,005 ms
+[2022-3-4 12:41:42] GET:/wyzebots 200 0,004 ms
+[2022-3-4 12:46:37] GET:/wyzebots 200 0,005 ms
+[2022-3-4 13:55:7] GET:/wyzebots 200 0,011 ms
+[2022-3-4 13:55:11] GET:/squads 200 0,006 ms
+[2022-3-4 13:55:11] GET:/wyzebots 200 0,003 ms
+[2022-3-4 13:55:13] GET:/tribes 200 0,004 ms
+[2022-3-4 13:55:13] GET:/squads 200 0,003 ms
+[2022-3-4 13:55:14] GET:/wyzebots 200 0,006 ms
+[2022-3-4 13:55:16] GET:/wyzebots/62162a68ebc7ef3810e40ed1 200 0,006 ms
+[2022-3-4 13:55:18] GET:/wyzebots 200 0,005 ms
+[2022-3-4 14:6:28] GET:/squads 200 0,004 ms
+[2022-3-4 14:6:28] GET:/wyzebots 200 0,003 ms
+[2022-3-4 14:6:51] GET:/squads 200 0,014 ms
+[2022-3-4 14:6:51] GET:/wyzebots 200 0,007 ms
+[2022-3-4 14:20:8] GET:/wyzebots 200 0,003 ms
+[2022-3-4 19:2:46] GET:/squads 200 0,004 ms
+[2022-3-4 19:3:46] GET:/squads 200 0,005 ms
+[2022-3-4 19:3:48] GET:/wyzebots 200 0,01 ms
+[2022-3-4 19:4:23] GET:/tribes 200 0,006 ms
+[2022-3-4 19:4:23] GET:/squads 200 0,005 ms
+[2022-3-4 19:5:58] GET:/tribes 200 0,008 ms
+[2022-3-4 19:5:59] GET:/squads 200 0,008 ms
+[2022-3-4 19:16:25] GET:/squads 200 0,009 ms
+[2022-3-4 19:17:8] GET:/squads 200 0,004 ms
+[2022-3-4 19:31:42] GET:/wyzebots 200 0,007 ms
+[2022-3-4 20:44:57] GET:/wyzebots/undefined 200 0,004 ms
+[2022-3-4 20:45:0] GET:/squads 200 0,003 ms
+[2022-3-4 20:47:4] GET:/wyzebots/undefined 200 0,004 ms
+[2022-3-4 20:47:24] GET:/squads 200 0,003 ms
+[2022-3-4 20:49:37] GET:/wyzebots/undefined 200 0,004 ms
+[2022-3-4 20:50:19] GET:/wyzebots/undefined 200 0,003 ms
+[2022-3-4 20:50:34] GET:/wyzebots/undefined 200 0,004 ms
+[2022-3-4 22:27:30] GET:/wyzebots 200 0,014 ms
